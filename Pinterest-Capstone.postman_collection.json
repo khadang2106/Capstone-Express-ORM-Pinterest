@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "dbdd1e8c-1fcb-4e8c-8712-3004a4512ccd",
+		"name": "Pinterest-Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28548055"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test04@gmail.com\",\r\n    \"mat_khau\":\"123\",\r\n    \"ho_ten\":\"Tester\",\r\n    \"tuoi\":20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/auth/register",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test04@gmail.com\",\r\n    \"mat_khau\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/auth/login",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-img-list",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-img-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/search-img/ì",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"search-img",
+						"ì"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-img-info/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-img-info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-comment/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-comment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leave Comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjE0NTkwNDA0MX0sImlhdCI6MTcwMjE0NTkwNCwiZXhwIjoxNzAyMjMyMzA0fQ.0AGfnL-Bb-BPYot8bi9-eIOCd3rjY0YRlpQQQUljsBg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hinh_id\": 2,\r\n    \"noi_dung\": \"bbbbb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/image/leave-comment",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"leave-comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save/Unsave Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/save-img/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"save-img",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image Save Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-img-save-status/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-img-save-status",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjIzMjQxMzQzNn0sImlhdCI6MTcwMjIzMjQxMywiZXhwIjoxNzAyMzE4ODEzfQ.eVvgDYa9VPCDL5QWYB9mAiU3hFiZrka2umjkfmPBJYU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-user-info",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-user-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Saved Image By User Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjMyMDY3NTg3MH0sImlhdCI6MTcwMjMyMDY3NSwiZXhwIjoxNzAyNDA3MDc1fQ.BZa5EJUbC4GgHVh8q38mqeYzkO3wMvZ_DwAQgVsMyn0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-saved-img-by-user-id",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-saved-img-by-user-id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Created Image By User Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjg4ODM1MjEwMn0sImlhdCI6MTcwMjg4ODM1MiwiZXhwIjoxNzAyOTc0NzUyfQ.cBUD6qdHQK2u_PEh0JheP3L2t9TBxU_xE_AHLd4Qmvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-created-img-by-user-id",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-created-img-by-user-id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjg4ODM1MjEwMn0sImlhdCI6MTcwMjg4ODM1MiwiZXhwIjoxNzAyOTc0NzUyfQ.cBUD6qdHQK2u_PEh0JheP3L2t9TBxU_xE_AHLd4Qmvs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/delete-img/5",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"delete-img",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Info",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjQwNjA0NzYzMX0sImlhdCI6MTcwMjQwNjA0NywiZXhwIjoxNzAyNDkyNDQ3fQ.Jg-THw_ymXAX7iCvlTCRLCbKNyb35qN9bXBxitFRXmA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ho_ten\": \"Tester\",\r\n    \"tuoi\": 26\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/update-user-info",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"update-user-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMjg4ODM1MjEwMn0sImlhdCI6MTcwMjg4ODM1MiwiZXhwIjoxNzAyOTc0NzUyfQ.cBUD6qdHQK2u_PEh0JheP3L2t9TBxU_xE_AHLd4Qmvs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/saocu/Desktop/windranger-arcana.jpg"
+						},
+						{
+							"key": "ten_hinh",
+							"value": "Arcana Windranger",
+							"type": "text"
+						},
+						{
+							"key": "mo_ta",
+							"value": "Arcana của Windranger, 1 tướng trong Dota2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/user/upload-img",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"upload-img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjQsImtleSI6MTcwMzg3MTY5NDU4N30sImlhdCI6MTcwMzg3MTY5NCwiZXhwIjoxNzAzOTU4MDk0fQ.Jy-6PnssTE8P7eHJ6cApfXTXPtyaAkgypLpIHurSlV4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/auth/token-ref",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"auth",
+						"token-ref"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
