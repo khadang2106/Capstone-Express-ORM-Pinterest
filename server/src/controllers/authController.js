@@ -66,7 +66,15 @@ export const login = async (req, res) => {
           },
         });
 
-        responseData(res, 'Login Successfully', token, 200);
+        const userData = {
+          nguoi_dung_id: checkUser.nguoi_dung_id,
+          email: checkUser.email,
+          ho_ten: checkUser.ho_ten,
+          anh_dai_dien: checkUser.anh_dai_dien,
+          token,
+        };
+
+        responseData(res, 'Login Successfully', userData, 200);
       } else {
         responseData(res, 'Incorrect Password', '', 400);
       }

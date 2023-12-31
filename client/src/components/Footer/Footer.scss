@@ -1,0 +1,17 @@
+.footer {
+  background: #fff;
+  padding: 2px;
+  ul {
+    li {
+      margin: 0 8px;
+      a {
+        color: #111111;
+        font-size: 12px;
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

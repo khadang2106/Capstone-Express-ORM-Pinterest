@@ -1,0 +1,36 @@
+.shop {
+  background-color: #ffe2eb;
+  .left {
+    width: 100%;
+    text-align: center;
+    padding: 32px;
+    h1 {
+      font-size: 60px;
+      color: #c32f00;
+      font-weight: bold;
+    }
+    p {
+      font-size: 24px;
+      color: #c32f00;
+      margin-top: 16px;
+    }
+    button {
+      min-width: 93px;
+      background: #c32f00;
+      color: #ffdfe9;
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 24px;
+      &:hover {
+        background-color: #c32f00;
+      }
+      &:active {
+        color: #ffdfe9;
+      }
+    }
+  }
+  .right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+.carousel {
+  overflow: hidden;
+  padding: 60px 0;
+  height: 100vh;
+  position: relative;
+  .slick-slider {
+    .slick-track .slick-slide {
+      overflow: hidden;
+    }
+    .slick-dots {
+      top: 100px;
+      li {
+        button {
+          height: 10px;
+          margin: 6px auto;
+          padding: 5px;
+          &::before {
+            font-size: 12px;
+          }
+        }
+      }
+      //   li.slick-active button:first-of-type {
+      //     color: #c28b00;
+      //   }
+    }
+  }
+  h1,
+  h2 {
+    text-align: center;
+    margin: 2px;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  h2 {
+    margin: 0;
+  }
+  img {
+    width: 236px;
+    height: 350px;
+    object-fit: fill;
+    border-radius: 16px;
+  }
+  .dinner h2 {
+    color: #c28b00;
+  }
+  .decor h2 {
+    color: #618c7b;
+  }
+  .outfit h2 {
+    color: #0076d3;
+  }
+  .green h2 {
+    color: #407a57;
+  }
+  .carousel-img {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    .mid-pic {
+      margin-top: 100px;
+    }
+    .low-pic {
+      margin-top: 170px;
+    }
+    .lowest-pic {
+      margin-top: 270px;
+    }
+  }
+  .carousel-overlay {
+    position: absolute;
+    height: 150px;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgb(255, 255, 255) 70%
+    );
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

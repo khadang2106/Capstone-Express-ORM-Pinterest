@@ -1,0 +1,195 @@
+.header {
+  padding: 16px;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  .header-left {
+    display: flex;
+    align-items: center;
+    .logo-pinterest {
+      display: flex;
+      align-items: center;
+      color: #e60023;
+      letter-spacing: -1px;
+      i {
+        font-size: 32px;
+      }
+      h1 {
+        margin-left: 4px;
+        font-size: 20px;
+      }
+    }
+    .left-item {
+      margin: 2px 0 0 12px;
+      ul {
+        li {
+          margin: 0 12px;
+          a {
+            color: rgb(33, 25, 34);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 8px;
+            transition: all 0.3s;
+            &:hover {
+              background-color: #e2e2e2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    .right-item {
+      margin: 2px 24px 0 0;
+      ul {
+        li {
+          margin: 0 12px;
+          a {
+            color: rgb(33, 25, 34);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 8px;
+            transition: all 0.3s;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .login-btn {
+      margin-right: 8px;
+    }
+    .signup-btn {
+      .pinterest-btn {
+        background-color: #efefef;
+        color: #111111;
+        &:hover {
+          background-color: #e2e2e2;
+          color: #111111;
+        }
+      }
+    }
+  }
+
+  .auth-header {
+    gap: 10px;
+    .header-link {
+      display: flex;
+      align-items: center;
+      .action-zone {
+        .active {
+          background-color: #111111;
+          color: #fff;
+        }
+        .action-btn {
+          padding: 10px 16px;
+          font-size: 16px;
+          font-weight: 600;
+
+          border-radius: 24px;
+          border: none;
+          border-color: transparent;
+        }
+      }
+    }
+    .header-search {
+      .ant-input-affix-wrapper {
+        padding: 10px 16px;
+        border-radius: 24px 0 0 24px;
+        background-color: #e9e9e9;
+        .ant-input {
+          background-color: #e9e9e9;
+          color: #333;
+          font-size: 16px;
+          &::placeholder {
+            color: #999999;
+          }
+        }
+      }
+      .ant-input-group-addon {
+        border: 1px solid #d9d9d9;
+        border-radius: 0 24px 24px 0;
+        background-color: #e9e9e9;
+        .ant-input-search-button {
+          background: transparent;
+          border-color: transparent;
+        }
+        .anticon-search {
+          font-weight: 600;
+        }
+      }
+    }
+    .header-profile {
+      display: flex;
+      align-items: center;
+      .profile-btn {
+        border-radius: 50%;
+        padding: 10px 12px;
+        i {
+          font-size: 24px;
+          color: #5f5f5f;
+        }
+        &:hover {
+          background-color: #e9e9e9;
+        }
+        &:active {
+          border-color: transparent;
+          i {
+            color: #111111;
+          }
+        }
+        &:focus {
+          border-color: transparent;
+          i {
+            color: #111111;
+          }
+        }
+      }
+      .user-profile {
+        .btn {
+          &:active {
+            border-color: transparent;
+          }
+          &:focus {
+            border-color: transparent;
+          }
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            &:active {
+              background-color: transparent;
+              color: #111111;
+            }
+            &:hover {
+              background-color: #eee;
+            }
+          }
+          .greeting {
+            display: block;
+            padding: 4px 16px;
+            color: #212529;
+            font-weight: 600;
+          }
+          .dropdown-divider {
+            margin: 2px 0;
+          }
+          i {
+            margin-right: 10px;
+          }
+          .logout-btn i {
+            color: red;
+          }
+          .profile-link i {
+            color: #1740d4;
+          }
+        }
+      }
+    }
+  }
+}
