@@ -216,7 +216,7 @@ export const getImgSaveStatus = async (req, res) => {
 
       responseData(res, 'Success', !!isSave, 200);
     } else {
-      responseData(res, 'Data not found', '', 404);
+      responseData(res, 'Data not found', !!isSave, 404);
     }
   } catch {
     responseData(res, 'Error...', '', 500);

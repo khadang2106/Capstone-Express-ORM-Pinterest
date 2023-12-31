@@ -1,0 +1,125 @@
+.img-detail {
+  padding: 100px 0;
+  .detail-wrapper {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    max-width: 1059px;
+    overflow: hidden;
+    .left,
+    .right,
+    .left img {
+      border-radius: 32px;
+      width: 100%;
+    }
+    .detail-content {
+      padding: 20px;
+      .right {
+        padding-left: 32px;
+        .btn-zone {
+          padding-top: 20px;
+          .btn-zone-left {
+            .btn {
+              border-radius: 50%;
+              padding: 10px 12px;
+              &:hover {
+                background-color: #e9e9e9;
+              }
+              &:active {
+                border-color: transparent;
+                i {
+                  color: #111111;
+                }
+              }
+              &:focus {
+                border-color: transparent;
+                i {
+                  color: #111111;
+                }
+              }
+              i {
+                font-size: 24px;
+              }
+            }
+          }
+          .unsave-btn {
+            padding: 10px 16px;
+          }
+          .save-btn {
+            padding: 10px 16px;
+            background-color: #111111;
+          }
+        }
+        .detail-zone {
+          .img-info {
+          }
+          .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            .avatar {
+              img {
+                width: 60px;
+                height: 60px;
+                object-fit: fill;
+                border-radius: 50%;
+              }
+            }
+            .author-name {
+              p {
+                &:first-of-type {
+                  font-weight: bold;
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+          .comment-zone {
+            h4 {
+              font-size: 20px;
+            }
+            .comment-item {
+              display: flex;
+              gap: 5px;
+              .commentor-avatar {
+                img {
+                  width: 40px;
+                  height: 40px;
+                  object-fit: fill;
+                  border-radius: 50%;
+                }
+              }
+              .commentor-name {
+                color: #111111;
+                font-weight: 600;
+                margin-right: 5px;
+              }
+            }
+          }
+          .leave-comment {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .user-avatar {
+              img {
+                width: 50px;
+                height: 50px;
+                object-fit: fill;
+                border-radius: 50%;
+              }
+            }
+            .comment-error {
+              font-size: 14px;
+            }
+            .ant-btn {
+              &:hover {
+                color: #fff;
+                border-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

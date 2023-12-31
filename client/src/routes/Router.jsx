@@ -6,6 +6,7 @@ import Login from '../pages/Login/Login';
 import Signup from '../pages/Signup/Signup';
 import NoAuthGuard from '../guards/NoAuthGuard';
 import Create from '../pages/Create/Create';
+import ImgDetail from '../pages/ImgDetail/ImgDetail';
 
 export default function Router() {
   const routing = useRoutes([
@@ -20,6 +21,10 @@ export default function Router() {
         {
           path: '/create',
           element: <Create />,
+        },
+        {
+          path: '/img-detail/:id',
+          element: <ImgDetail />,
         },
         {
           path: '/login',
