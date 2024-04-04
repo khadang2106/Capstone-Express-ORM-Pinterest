@@ -4,7 +4,7 @@ import './Search.scss';
 export default function Search() {
   return (
     <div className="search">
-      <div className="container">
+      <div className="container-lg">
         <div className="d-flex justify-content-center align-items-center">
           <div className="left">
             <img
@@ -31,8 +31,8 @@ export default function Search() {
           <div className="right">
             <h1>Search for an idea</h1>
             <p>
-              What do you want to try next? Think of something you’re into—like
-              “easy chicken dinner”—and see what you find.
+              What do you want to try next? Think of something you’re into like
+              “easy chicken dinner” and see what you find.
             </p>
             <button className="btn pinterest-btn">Explore</button>
           </div>

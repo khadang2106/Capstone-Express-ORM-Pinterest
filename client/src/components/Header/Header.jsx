@@ -92,7 +92,7 @@ export default function Header() {
           </div>
         </div>
       ) : (
-        <div className="container-fluid d-flex justify-content-between">
+        <div className="container-fluid d-flex justify-content-around justify-content-lg-between justify-content-md-evenly">
           <div className="header-left">
             <NavLink className="logo-pinterest" to={'/'}>
               <i className="fa-brands fa-pinterest" />
@@ -148,6 +148,73 @@ export default function Header() {
               >
                 Sign up
               </button>
+            </div>
+          </div>
+          <button
+            className="btn btn-secondary collapse-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#drawer"
+          >
+            <i className="fa-solid fa-bars" />
+          </button>
+          <div className="offcanvas offcanvas-end" id="drawer">
+            <div className="offcanvas-header">
+              <NavLink to={'/'}>
+                <h1 className="offcanvas-title">Pinterest</h1>
+              </NavLink>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div className="offcanvas-body">
+              <ul>
+                <li>
+                  <a href="#">Today</a>
+                </li>
+                <li>
+                  <a href="#">Watch</a>
+                </li>
+                <li>
+                  <a href="#">Shop</a>
+                </li>
+                <li>
+                  <a href="#">Explore</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Business</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+              <div className="d-flex justify-content-center">
+                <div className="login-btn">
+                  <button
+                    className="btn pinterest-btn"
+                    onClick={() => {
+                      navigate('/login');
+                    }}
+                  >
+                    Log in
+                  </button>
+                </div>
+                <div className="signup-btn">
+                  <button
+                    className="btn pinterest-btn"
+                    onClick={() => {
+                      navigate('/signup');
+                    }}
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

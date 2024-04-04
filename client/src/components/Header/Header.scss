@@ -76,7 +76,49 @@
       }
     }
   }
-
+  .collapse-btn {
+    padding: 4px 12px;
+    display: none;
+  }
+  .offcanvas-header {
+    padding: 8px 16px 0;
+    .offcanvas-title {
+      color: #e60023;
+    }
+  }
+  .offcanvas-body {
+    padding: 0 16px 16px;
+    ul {
+      text-align: center;
+      li {
+        margin: 5px 0;
+        a {
+          color: rgb(33, 25, 34);
+          font-size: 20px;
+          font-weight: 600;
+          border-radius: 5px;
+          padding: 8px;
+          transition: all 0.3s;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .d-flex {
+      gap: 5px;
+    }
+    .signup-btn {
+      .pinterest-btn {
+        background-color: #efefef;
+        color: #111111;
+        &:hover {
+          background-color: #e2e2e2;
+          color: #111111;
+        }
+      }
+    }
+  }
   .auth-header {
     gap: 10px;
     .header-link {
@@ -190,6 +232,62 @@
           }
         }
       }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 992px) {
+  .header {
+    .header-left {
+      .left-item {
+        margin: 0;
+        ul li {
+          margin: 0 8px;
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .header-right {
+      .right-item {
+        margin: 0;
+        ul li {
+          margin: 0 8px;
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    .header-right {
+      .pinterest-btn {
+        font-size: 15px;
+        padding: 5px 10px;
+      }
+      .login-btn {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 735px) {
+  .header {
+    .header-left {
+      .left-item {
+        display: none;
+      }
+    }
+    .header-right {
+      display: none;
+    }
+    .collapse-btn {
+      display: block;
     }
   }
 }

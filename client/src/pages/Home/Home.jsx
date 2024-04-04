@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       {userState?.userInfo ? (
-        <div></div>
+        <div style={{ paddingTop: '80px' }}>Hi</div>
       ) : (
         <>
           <Carousel />
